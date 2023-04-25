@@ -2,7 +2,8 @@
 import { css } from "styled-components";
 
 export const BREAKPOINTS = {
-    remToggle: "max-width:93.75em"
+    remToggle: "max-width:93.75em",
+    burger: "max-width: 750px"
 }
 
 export const variables = css`
@@ -28,6 +29,15 @@ export const variables = css`
         --fs-paragraph: 1.8rem;
 
         --fw-regular: 400;
-        --fw-bold: 700; 
+        --fw-bold: 700;
+
+        //SIZE
+        --website-width: 140rem;
+
+        //BORDERS
+        --border-thin: .1rem solid #E0E0E0;
+
+        //ANIMATIONS
+        --transition-primary: all .2s ease-in-out;
     }
 `;
