@@ -19,7 +19,7 @@ const Navigation : FC<INavigationProps> = ({isOpen}) => {
   return (
     <StyledNavigation isOpen={isOpen}>
         {
-            NAVIGATION_ITEMS.map(navItem => <NavigationItem label={navItem.label} to={navItem.to} />)
+            NAVIGATION_ITEMS.map((navItem,index) => <NavigationItem key={`${navItem.label}-${index}`} label={navItem.label} to={navItem.to} />)
         }
     </StyledNavigation>
   )

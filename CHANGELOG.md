@@ -21,3 +21,20 @@
   - CartButton component
   - Burger Component
   - RWD for Header with Burger functionality.
+  - Error Page
+
+ ## [0.0.2] - 25-04-2023
+
+ ### Added
+  - Favicon
+  - Button component with 3 variants: default, yellow and white
+  - LinkButton component, that inherits from Button, but is a Link with visual clue (arrow)
+  - Heading component with 6 size variants and 2 color variants
+  - Page and Section layout helper
+  - HomePage compoennt
+  - HeroSection component
+  - RWD for all current styling
+
+ ### Changed
+ - Vertical Padding in Header component to be smaller
+ - Positioning to initial

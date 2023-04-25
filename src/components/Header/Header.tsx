@@ -1,5 +1,5 @@
 import { FC, useState } from 'react'
-import Section from '../../layout/Section/Section'
+import Section from '../../layout/Section'
 import styled from 'styled-components'
 import Logo, { StyledLogo } from '../Logo/Logo'
 import Navigation, { StyledNavigation } from '../Navigation/Navigation'
@@ -28,14 +28,14 @@ const Header : FC = () => {
 }
 
 const HeaderWrapper = styled(Section)`
-    position: fixed;
+    /* position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100%; */
 `;
 
 const HeaderContainer = styled.div`
-    padding: 6.9rem 0;
+    padding: 6rem 0;
     display: grid;
     grid-template-columns: min-content 1fr min-content;
     grid-template-areas: "logo nav cart";

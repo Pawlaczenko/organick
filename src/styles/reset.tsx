@@ -18,7 +18,6 @@ export const reset = css`
     // 4. Add accessible line-height
     // 5. Improve text rendering
     body {
-        line-height: 1.5;
         -webkit-font-smoothing: antialiased;
     }
     a {

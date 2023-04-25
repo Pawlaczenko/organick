@@ -1,8 +1,12 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
+import Page from '../layout/Page'
+import HeroSection from '../components/HeroSection/HeroSection'
 
 const HomePage : FC = () => {
   return (
-    <div></div>
+    <Page>
+      <HeroSection />
+    </Page>
   )
 }
 

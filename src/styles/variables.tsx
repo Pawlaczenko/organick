@@ -3,7 +3,8 @@ import { css } from "styled-components";
 
 export const BREAKPOINTS = {
     remToggle: "max-width:93.75em",
-    burger: "max-width: 750px"
+    burger: "max-width: 750px",
+    small: "max-width: 500px"
 }
 
 export const variables = css`
@@ -27,6 +28,10 @@ export const variables = css`
         --fs-h6: 2.5rem;
         --fs-quote: 2rem;
         --fs-paragraph: 1.8rem;
+
+        @media only screen and (${BREAKPOINTS.small}){
+            --fs-h1: 6rem;
+        }
 
         --fw-regular: 400;
         --fw-bold: 700;
