@@ -8,7 +8,7 @@ const Button = styled.button<{buttonType: ButtonType}>`
     font-weight: var(--fw-bold);
 
     width: fit-content;
-    padding: 2.8rem 3.9rem;
+    padding: 2.5rem 4.5rem;
     ${flexCenter};
     gap: 1rem;
     
