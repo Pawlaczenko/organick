@@ -1,7 +1,6 @@
 import React from 'react'
 import { FC } from 'react';
 import Button, { ButtonType } from '../Button/Button';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
 import { flexCenter } from '../../styles/mixins';
@@ -24,7 +23,7 @@ const LinkButton : FC<ILinkButtonProps> = (props) => {
   )
 }
 
-const StyledLinkButton = styled(NavLink)`
+export const StyledLinkButton = styled(NavLink)`
     width: fit-content;
 `
 
