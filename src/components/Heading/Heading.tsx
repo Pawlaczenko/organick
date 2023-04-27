@@ -11,7 +11,7 @@ export enum HeadingLevel {
     h6="h6",
 }
 
-type HeadingType = 'primary' | 'white';
+export type HeadingType = 'primary' | 'white';
 
 interface IHeadingProps {
     level: HeadingLevel,

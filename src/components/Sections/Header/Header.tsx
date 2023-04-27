@@ -1,11 +1,11 @@
 import { FC, useState } from 'react'
-import Section from '../../layout/Section'
+import Section from '../../../layout/Section'
 import styled from 'styled-components'
-import Logo, { StyledLogo } from '../Logo/Logo'
-import Navigation, { StyledNavigation } from '../Navigation/Navigation'
-import CartButton, { StyledCartButton } from '../CartButton/CartButton'
-import Burger, { StyledBurger } from '../Burger/Burger'
-import { BREAKPOINTS } from '../../styles/variables'
+import Logo, { StyledLogo } from '../../Logo/Logo'
+import Navigation, { StyledNavigation } from '../../Navigation/Navigation'
+import CartButton, { StyledCartButton } from '../../CartButton/CartButton'
+import Burger, { StyledBurger } from '../../Burger/Burger'
+import { BREAKPOINTS } from '../../../styles/variables'
 
 const Header : FC = () => {
   

@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import styled from 'styled-components';
-import Section from '../../layout/Section';
-import Heading, { HeadingLevel, StyledHeading } from '../Heading/Heading';
-import heroBackgroundImage from '../../assets/images/home-hero.jpg';
-import LinkButton from '../LinkButton/LinkButton';
-import { BREAKPOINTS } from '../../styles/variables';
-import { flexCenter } from '../../styles/mixins';
+import Section from '../../../layout/Section';
+import Heading, { HeadingLevel, StyledHeading } from '../../Heading/Heading';
+import heroBackgroundImage from '../../../assets/images/home-hero.jpg';
+import LinkButton from '../../LinkButton/LinkButton';
+import { BREAKPOINTS } from '../../../styles/variables';
+import { flexCenter } from '../../../styles/mixins';
 
 const HeroSection : FC = () => {
   return (
