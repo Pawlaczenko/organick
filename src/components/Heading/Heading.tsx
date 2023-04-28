@@ -18,6 +18,7 @@ interface IHeadingProps {
     children: React.ReactNode,
     upperText?: string,
     type?: HeadingType
+    alignCenter?: boolean
 }
 
 
@@ -25,16 +26,17 @@ const Heading : FC<IHeadingProps> = (props) => {
   const headingStyle = {"--heading-size": `var(--fs-${props.level})`} as React.CSSProperties;
   
   return (
-    <StyledHeading type={props.type} as={props.level} style={headingStyle}>
+    <StyledHeading type={props.type} as={props.level} style={headingStyle} alignCenter={props.alignCenter}>
         {props.upperText && <StyledUpperText type={props.type}>{props.upperText}</StyledUpperText>}
         {props.children}
     </StyledHeading>
   )
 }
 
-export const StyledHeading = styled.h1<{type?:HeadingType}>`
+export const StyledHeading = styled.h1<{type?:HeadingType,alignCenter?:boolean}>`
     font-size: var(--heading-size);
     color: ${({type}) => type==='primary' || !type ? 'var(--color-primary)' : 'white'};
+    ${(props) => props.alignCenter && "text-align: center;"};
 `;
 
 const StyledUpperText = styled.span<{type?:HeadingType}>`
