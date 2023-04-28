@@ -10,7 +10,18 @@ export interface IProduct {
     category: ProductCategory,
 }
 
-export const PRODUCTS : IProduct[] = [
+export const getProducts = (qnt?: number , category?: ProductCategory) => {
+    let res : IProduct[] = [...PRODUCTS];
+    if(category){
+        res = res.filter(product => product.category === category);
+    }
+    if(qnt) {
+        res = res.slice(0,qnt);
+    }
+    return res;
+}
+
+const PRODUCTS : IProduct[] = [
     {
         id: 1,
         name: "Calabrese Broccoli",
@@ -76,5 +87,21 @@ export const PRODUCTS : IProduct[] = [
         category: "Fresh",
         rating: 4,
         image_path: "https://i.ibb.co/fxkF4WD/Photo-19.jpg"
+    },
+    {
+        id: 9,
+        name: "Red Tomato",
+        price: 21,
+        category: "Vegetable",
+        rating: 5,
+        image_path: "https://i.ibb.co/mqpjXYn/image-13.jpg"
+    },
+    {
+        id: 10,
+        name: "Red Pepper",
+        price: 21,
+        category: "Vegetable",
+        rating: 5,
+        image_path: "https://i.ibb.co/mqpjXYn/image-13.jpg"
     },
 ]
