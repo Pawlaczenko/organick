@@ -4,6 +4,7 @@ import HeroSection from '../components/Sections/HeroSection/HeroSection'
 import OffersSection from '../components/Sections/OffersSection/OffersSection'
 import AboutSection from '../components/Sections/AboutSection/AboutSection'
 import OurProductsSection from '../components/Sections/OurProductsSection/OurProductsSection'
+import OrganicSection from '../components/Sections/OrganicSection/OrganicSection'
 
 const HomePage : FC = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage : FC = () => {
       <OffersSection />
       <AboutSection />
       <OurProductsSection />
+      <OrganicSection />
     </Page>
   )
 }

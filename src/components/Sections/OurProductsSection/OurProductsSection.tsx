@@ -3,16 +3,17 @@ import styled from 'styled-components'
 import Section from '../../../layout/Section';
 import Heading, { HeadingLevel } from '../../Heading/Heading';
 import ProductsGrid, { StyledProductsGrid } from '../../ProductsGrid/ProductsGrid';
-import { PRODUCTS } from '../../../data/products';
 import { BREAKPOINTS } from '../../../styles/variables';
 import LinkButton, { StyledLinkButton } from '../../LinkButton/LinkButton';
+import { getProducts } from '../../../data/products';
 
 const OurProductsSection : FC = () => {
+    const products = getProducts(8);
     return (
         <OurProductsSectionWrapper>
             <StyledOurProductsSection>
                 <Heading level={HeadingLevel.h2} upperText='Categories' alignCenter>Our Products</Heading>
-                <ProductsGrid productsArray={PRODUCTS} />
+                <ProductsGrid productsArray={products} />
                 <LinkButton type='default' to='/products'>Shop Now</LinkButton>
             </StyledOurProductsSection>
         </OurProductsSectionWrapper>
@@ -33,7 +34,7 @@ const StyledOurProductsSection = styled.div`
     }
 
     & > ${StyledLinkButton} {
-        margin: 12rem auto;
+        margin: 9rem auto 0 auto;
     }
 `;
 
