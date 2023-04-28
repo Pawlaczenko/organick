@@ -25,6 +25,7 @@ const LinkButton : FC<ILinkButtonProps> = (props) => {
 
 export const StyledLinkButton = styled(NavLink)`
     width: fit-content;
+    display: block;
 `
 
 const LinkArrowIcon = styled.figure`
