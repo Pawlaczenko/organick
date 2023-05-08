@@ -22,11 +22,7 @@ const OrganicSection : FC = () => {
 
 const OrganicSectionWrapper = styled(Section)`
     background: var(--color-primary);
-    padding: 18rem 0;
-
-    @media only screen and (${BREAKPOINTS.burger}) {
-        padding: 9rem 0;
-    }
+    padding: var(--section-padding) 0;
 `;
 
 

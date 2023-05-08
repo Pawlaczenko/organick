@@ -56,6 +56,7 @@ const ProductCategory = styled.span`
 
     border-radius: .8rem;
     padding: .6rem 1.2rem;
+    font-weight: var(--fw-semi-bold);
 `;
 
 const ProductImage = styled.figure`

@@ -14,7 +14,7 @@ const Paragraph : FC<IParagraphProps> = ({textAlign,children}) => {
     )
 }
 
-const StyledParagraph = styled.p<IParagraphProps>`
+export const StyledParagraph = styled.p<IParagraphProps>`
     font-size: var(--fs-paragraph);
     color: var(--color-grey);
     text-align: ${(props) => props.textAlign || "left"};

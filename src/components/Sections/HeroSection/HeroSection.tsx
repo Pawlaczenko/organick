@@ -23,7 +23,7 @@ const HeroSection : FC = () => {
 const HeroSectionWrapper = styled(Section)`
     --hero-background: url(${heroBackgroundImage}) center / cover no-repeat;
     background: var(--hero-background);
-    padding: 24.5rem 0;
+    padding: 20rem 0;
 
     & > ${StyledHeading} {
         width: 37%;

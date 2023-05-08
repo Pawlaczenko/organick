@@ -34,10 +34,20 @@ export const variables = css`
         }
 
         --fw-regular: 400;
+        --fw-semi-bold: 600;
         --fw-bold: 700;
+        --fw-extra-bold: 800;
+
+        --family-primary: 'Roboto', sans-serif;
+        --family-secondary: 'Open Sans', sans-serif;
 
         //SIZE
         --website-width: 140rem;
+        --section-padding: 15rem;
+        @media only screen and (${BREAKPOINTS.burger}){
+            --section-padding: 9.5rem;
+        }
+        
 
         //BORDERS
         --border-thin: .1rem solid #E0E0E0;

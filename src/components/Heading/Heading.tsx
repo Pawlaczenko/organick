@@ -35,6 +35,7 @@ const Heading : FC<IHeadingProps> = (props) => {
 
 export const StyledHeading = styled.h1<{type?:HeadingType,alignCenter?:boolean}>`
     font-size: var(--heading-size);
+    font-family: var(--family-primary);
     color: ${({type}) => type==='primary' || !type ? 'var(--color-primary)' : 'white'};
     ${(props) => props.alignCenter && "text-align: center;"};
 `;
