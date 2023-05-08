@@ -21,10 +21,7 @@ const OurProductsSection : FC = () => {
 }
 
 const OurProductsSectionWrapper = styled(Section)`
-    margin: 15rem 0;
-    @media only screen and (${BREAKPOINTS.burger}){
-        margin: 7.5rem 0;
-    }
+    padding: var(--section-padding) 0;
 `;
 
 

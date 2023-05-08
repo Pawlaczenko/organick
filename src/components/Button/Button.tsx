@@ -6,6 +6,7 @@ export type ButtonType = 'default' | 'yellow' | 'white';
 const Button = styled.button<{buttonType: ButtonType}>`
     font-size: var(--fs-quote);
     font-weight: var(--fw-bold);
+    font-family: var(--family-primary);
 
     width: fit-content;
     padding: 2.5rem 4.5rem;

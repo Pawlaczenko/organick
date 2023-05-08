@@ -5,6 +5,7 @@ import OffersSection from '../components/Sections/OffersSection/OffersSection'
 import AboutSection from '../components/Sections/AboutSection/AboutSection'
 import OurProductsSection from '../components/Sections/OurProductsSection/OurProductsSection'
 import OrganicSection from '../components/Sections/OrganicSection/OrganicSection'
+import TestimonialsSection from '../components/Sections/TestimonialsSection/TestimonialsSection'
 
 const HomePage : FC = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage : FC = () => {
       <OffersSection />
       <AboutSection />
       <OurProductsSection />
+      <TestimonialsSection />
       <OrganicSection />
     </Page>
   )

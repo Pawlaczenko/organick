@@ -18,40 +18,36 @@ const Header : FC = () => {
   return (
     <HeaderWrapper as="header">
         <HeaderContainer>
-            <Logo />
-            <Navigation isOpen={isOpen} />
-            <CartButton />
-            <Burger isOpen={isOpen} handleClick={handleBurgerToogle} />
+          <Logo />
+          <Navigation isOpen={isOpen} />
+          <CartButton />
+          <Burger isOpen={isOpen} handleClick={handleBurgerToogle} />
         </HeaderContainer>
     </HeaderWrapper>
   )
 }
 
 const HeaderWrapper = styled(Section)`
-    /* position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%; */
 `;
 
 const HeaderContainer = styled.div`
-    padding: 6rem 0;
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;
-    grid-template-areas: "logo nav cart";
-    gap: 2rem;
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-areas: "logo nav cart";
+  gap: 2rem;
 
-    & > ${StyledLogo} {grid-area: logo};
-    & > ${StyledNavigation} {grid-area: nav};
-    & > ${StyledCartButton} {grid-area: cart};
-    & > ${StyledBurger} {grid-area: cart};
+  & > ${StyledLogo} {grid-area: logo};
+  & > ${StyledNavigation} {grid-area: nav};
+  & > ${StyledCartButton} {grid-area: cart};
+  & > ${StyledBurger} {grid-area: cart};
 
-    @media only screen and (${BREAKPOINTS.burger}) {
-        & > ${StyledCartButton} {grid-area: nav; justify-self: end;}
-        & > ${StyledLogo} {grid-area: logo;}
+  @media only screen and (${BREAKPOINTS.burger}) {
+      & > ${StyledCartButton} {grid-area: nav; justify-self: end;}
+      & > ${StyledLogo} {grid-area: logo;}
 
-        padding: 4rem 0;
-    }
+      padding: 4rem 0;
+  }
 `;
 
 export default Header

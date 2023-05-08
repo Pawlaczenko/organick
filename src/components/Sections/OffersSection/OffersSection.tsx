@@ -19,11 +19,7 @@ const OffersSection : FC = () => {
 }
 
 const OffersSectionWrapper = styled(Section)`
-    margin: 15rem 0;
-
-    @media only screen and (${BREAKPOINTS.burger}){
-        margin: 8rem 0;
-    }
+    padding: var(--section-padding) 0;
 `;
 
 

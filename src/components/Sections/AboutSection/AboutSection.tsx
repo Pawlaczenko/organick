@@ -41,12 +41,8 @@ const AboutSection : FC = () => {
 }
 
 const AboutSectionWrapper = styled(Section)`
-    padding: 18rem 0;
+    padding: var(--section-padding) 0;
     background: var(--color-light-1);
-
-    @media only screen and (${BREAKPOINTS.burger}){
-        padding: 10rem 0;
-    }
 `;
 
 
