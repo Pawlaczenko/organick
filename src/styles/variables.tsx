@@ -34,9 +34,10 @@ export const variables = css`
         }
 
         --fw-regular: 400;
+        --fw-medium: 500;
         --fw-semi-bold: 600;
         --fw-bold: 700;
-        --fw-extra-bold: 800;
+        --fw-extra-bold: 900;
 
         --family-primary: 'Roboto', sans-serif;
         --family-secondary: 'Open Sans', sans-serif;

@@ -38,6 +38,9 @@ export const StyledHeading = styled.h1<{type?:HeadingType,alignCenter?:boolean}>
     font-family: var(--family-primary);
     color: ${({type}) => type==='primary' || !type ? 'var(--color-primary)' : 'white'};
     ${(props) => props.alignCenter && "text-align: center;"};
+    font-weight: var(--fw-extra-bold);
+
+    &:is(h6){font-weight: var(--fw-medium)};
 `;
 
 const StyledUpperText = styled.span<{type?:HeadingType}>`
