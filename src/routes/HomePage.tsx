@@ -6,6 +6,7 @@ import AboutSection from '../components/Sections/AboutSection/AboutSection'
 import OurProductsSection from '../components/Sections/OurProductsSection/OurProductsSection'
 import OrganicSection from '../components/Sections/OrganicSection/OrganicSection'
 import TestimonialsSection from '../components/Sections/TestimonialsSection/TestimonialsSection'
+import EcoFriendlySection from '../components/Sections/EcoFriendlySection/EcoFriendlySection'
 
 const HomePage : FC = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage : FC = () => {
       <OurProductsSection />
       <TestimonialsSection />
       <OrganicSection />
+      <EcoFriendlySection />
     </Page>
   )
 }
