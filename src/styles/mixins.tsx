@@ -26,3 +26,12 @@ export const addColorOverlay = (type:'dark' | 'light', background: string) => {
             ${background};
     `
 }
+
+export const createCircle = (size:string) => {
+    return css`
+        width: ${size};
+        height: ${size};
+        border-radius: 50%;
+        flex-shrink: 0;  
+    `
+}

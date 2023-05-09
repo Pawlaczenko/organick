@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
 import Section from '../../../layout/Section';
 import OfferWindow from '../../OfferWindow/OfferWindow';

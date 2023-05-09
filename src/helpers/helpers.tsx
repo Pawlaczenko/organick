@@ -8,3 +8,11 @@ export function getMoth(date: Date): string {
 
     return month;
 }
+
+export function camelToRegular(camelCaseString: string): string {
+    const words = camelCaseString.split(/(?=[A-Z])/);
+  
+    const regularText = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  
+    return regularText;
+  }

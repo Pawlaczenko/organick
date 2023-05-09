@@ -18,7 +18,7 @@ const EcoFriendlySection : FC = () => {
                     {
                         listItems.map((item,index) => {
                             return(
-                                <EcoListItem>
+                                <EcoListItem key={'ecofriendlyitem-'+index}>
                                     <Heading level={HeadingLevel.h6}>{item.title}</Heading>
                                     <Paragraph>{item.description}</Paragraph>
                                 </EcoListItem>
