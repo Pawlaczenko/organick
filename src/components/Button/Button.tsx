@@ -9,11 +9,11 @@ const Button = styled.button<{buttonType: ButtonType}>`
     font-family: var(--family-primary);
 
     width: fit-content;
-    padding: 2.5rem 4.5rem;
+    padding: var(--input-padding) 4.5rem;
     ${flexCenter};
     gap: 1rem;
     
-    border-radius: 1.6rem;
+    border-radius: var(--input-radius);
     border: none;
     background-color: var(--btn-color-back);
     color: var(--btn-color-text);
