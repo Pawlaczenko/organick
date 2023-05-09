@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
 import { BREAKPOINTS } from '../../styles/variables'
-import { flexCenter } from '../../styles/mixins'
 import Heading, { HeadingLevel, HeadingType } from '../Heading/Heading'
+import { addColorOverlay } from '../../styles/mixins'
 
 interface IOfferWindowProps {
     text: string,
@@ -12,7 +12,7 @@ interface IOfferWindowProps {
 }
 
 const OfferWindow : FC<IOfferWindowProps> = ({text,upperText,variant,backgroundImage}) => {
-    const headingType : HeadingType = variant === 'dark' ? 'primary' : 'white';
+    const headingType : HeadingType = variant === 'dark' ? 'white' : 'primary';
     return (
         <StyledOfferWindow overlayType={variant} backImgUrl={backgroundImage}>
             <Heading upperText={upperText} level={HeadingLevel.h3} type={headingType}>{text}</Heading>
@@ -36,11 +36,7 @@ const StyledOfferWindow = styled.div<{backImgUrl: string, overlayType: 'light' |
 
     @media only screen and (${BREAKPOINTS.burger}){
         & > * {width: 100%;}
-
-        --overlay-color: ${(props) => props.overlayType==='dark' ? "rgba(255,255,255,.6)" : "rgba(0,0,0,.4)"};
-        background: 
-            linear-gradient(180deg, var(--overlay-color) 0%, var(--overlay-color) 100%), 
-            var(--offer-background);
+        ${(props) => addColorOverlay(props.overlayType,'var(--offer-background)')};
     }
 `;
 

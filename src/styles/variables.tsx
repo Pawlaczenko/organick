@@ -3,6 +3,7 @@ import { css } from "styled-components";
 
 export const BREAKPOINTS = {
     remToggle: "max-width:93.75em",
+    big: "max-width: 910px",
     burger: "max-width: 750px",
     small: "max-width: 500px"
 }
@@ -49,6 +50,8 @@ export const variables = css`
             --section-padding: 9.5rem;
         }
         
+        --input-radius: 1.6rem;
+        --input-padding: 2.5rem;
 
         //BORDERS
         --border-thin: .1rem solid #E0E0E0;
