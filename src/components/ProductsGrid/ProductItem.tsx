@@ -2,7 +2,7 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import { IProduct } from 'src/data/products';
 import { flexCenter } from 'src/styles/mixins';
-import StarRating from '../StarRating/StarRating';
+import StarRating from '../StarRating';
 import { NavLink } from 'react-router-dom';
 
 const ProductItem : FC<IProduct> = (props) => {

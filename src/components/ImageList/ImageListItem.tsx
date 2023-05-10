@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Heading, { HeadingLevel } from '../Heading/Heading';
-import Paragraph from '../Paragraph/Paragraph';
+import Heading, { HeadingLevel } from '../Heading';
+import Paragraph from '../Paragraph';
 import { flexCenter} from 'src/styles/mixins';
 
 export interface IImageListItem {

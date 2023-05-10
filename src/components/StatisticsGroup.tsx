@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import StatCircle, { IStatCircle } from '../StatCircle/StatCircle';
+import StatCircle, { IStatCircle } from './StatCircle';
 
 const StatisticsGroup : FC<{items: IStatCircle[]}> = ({items}) => {
     return (

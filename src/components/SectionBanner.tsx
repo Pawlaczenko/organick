@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
-import Heading, { HeadingLevel } from '../Heading/Heading';
+import Heading, { HeadingLevel } from './Heading';
 
 export interface ISectionBannerProps {
     title: string,

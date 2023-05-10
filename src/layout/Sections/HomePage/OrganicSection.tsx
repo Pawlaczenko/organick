@@ -2,8 +2,8 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
 import { BREAKPOINTS } from 'src/styles/variables';
-import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
-import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton';
 import ProductsGrid, { StyledProductsGrid } from 'src/components/ProductsGrid/ProductsGrid';
 import { getProducts } from 'src/data/products';
 

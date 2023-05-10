@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { IArticle } from 'src/data/articles';
 import DateCircle from './DateCircle';
 import { FaUserAlt } from 'react-icons/fa';
-import Heading, { HeadingLevel } from '../Heading/Heading';
-import Paragraph from '../Paragraph/Paragraph';
-import LinkButton, { StyledLinkButton } from '../LinkButton/LinkButton';
+import Heading, { HeadingLevel } from '../Heading';
+import Paragraph from '../Paragraph';
+import LinkButton, { StyledLinkButton } from '../LinkButton';
 import { BREAKPOINTS } from 'src/styles/variables';
 
 const NewsItem : FC<IArticle> = (props) => {

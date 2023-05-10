@@ -2,9 +2,9 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
 import NewsletterBackground from 'src/assets/images/newsletter-background.png';
-import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
-import Button from 'src/components/Button/Button';
-import Input from 'src/components/Input/Input';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading';
+import Button from 'src/components/Button';
+import Input from 'src/components/Input';
 import { BREAKPOINTS } from 'src/styles/variables';
 import { addColorOverlay, flexCenter } from 'src/styles/mixins';
 

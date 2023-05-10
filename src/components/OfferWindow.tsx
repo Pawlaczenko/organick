@@ -2,7 +2,7 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import { BREAKPOINTS } from 'src/styles/variables'
 import { addColorOverlay } from 'src/styles/mixins'
-import Heading, { HeadingLevel, HeadingType } from '../Heading/Heading'
+import Heading, { HeadingLevel, HeadingType } from './Heading'
 
 interface IOfferWindowProps {
     text: string,

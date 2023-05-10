@@ -2,9 +2,9 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
 import BackgroundImage from 'src/assets/images/testimonial-background.png';
-import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
+import Heading, { HeadingLevel } from 'src/components/Heading';
 import LineBreak from 'src/layout/LineBreak';
-import StatisticsGroup from 'src/components/StatisticsGroup/StatisticsGroup';
+import StatisticsGroup from 'src/components/StatisticsGroup';
 import { TESTIMONIAL_STATISTICS } from 'src/data/testimonials';
 import { BREAKPOINTS } from 'src/styles/variables';
 import TestimonialSlider from 'src/components/TestimonialSlider/TestimonialSlider';

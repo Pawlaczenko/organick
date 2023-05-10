@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
-import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
+import Heading, { HeadingLevel } from 'src/components/Heading';
 import ProductsGrid, { StyledProductsGrid } from 'src/components/ProductsGrid/ProductsGrid';
-import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton';
 import { getProducts } from 'src/data/products';
 
 const OurProductsSection : FC = () => {

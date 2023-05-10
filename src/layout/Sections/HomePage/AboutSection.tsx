@@ -2,12 +2,12 @@ import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
 import aboutImage from 'src/assets/images/about-fruits.png';
-import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
-import Paragraph from 'src/components/Paragraph/Paragraph';
+import Heading, { HeadingLevel } from 'src/components/Heading';
+import Paragraph from 'src/components/Paragraph';
 import ImageList, { StyledImageList } from 'src/components/ImageList/ImageList';
 import { IImageListItem } from 'src/components/ImageList/ImageListItem';
 import {FaLeaf,FaMedal} from "react-icons/fa";
-import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton';
 import { BREAKPOINTS } from 'src/styles/variables';
 
 const AboutSection : FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FC } from 'react';
-import Button, { ButtonType } from '../Button/Button';
+import Button, { ButtonType } from './Button';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
 import { flexCenter } from 'src/styles/mixins';

@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
-import Paragraph from 'src/components/Paragraph/Paragraph';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading';
+import Paragraph from 'src/components/Paragraph';
 import EcoBackground from 'src/assets/images/eco-background.jpg';
 import Section from 'src/layout/Section';
 import { BREAKPOINTS } from 'src/styles/variables';

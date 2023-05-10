@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
-import Logo from 'src/components/Logo/Logo';
-import Paragraph, { StyledParagraph } from 'src/components/Paragraph/Paragraph';
+import Logo from 'src/components/Logo';
+import Paragraph, { StyledParagraph } from 'src/components/Paragraph';
 import { flexCenter } from 'src/styles/mixins';
 import { SOCIALS, SOCIAL_ICONS, COMPANY_INFO } from 'src/data/socials';
-import CircleLink from 'src/components/CircleLink/CircleLink';
-import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
+import CircleLink from 'src/components/CircleLink';
+import Heading, { HeadingLevel } from 'src/components/Heading';
 import FooterGroup, { IFooterGroupItem } from './FooterGroup';
 import { BREAKPOINTS } from 'src/styles/variables';
 

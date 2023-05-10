@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Section from 'src/layout/Section';
-import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
-import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton';
 import NewsGrid, { StyledNewsGrid } from 'src/components/NewsGrid/NewsGrid';
 import { BREAKPOINTS } from 'src/styles/variables';
 

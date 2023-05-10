@@ -1,10 +1,10 @@
 import { FC, useEffect, useState } from 'react'
 import Section from 'src/layout/Section'
 import styled from 'styled-components'
-import Logo, { StyledLogo } from 'src/components/Logo/Logo'
+import Logo, { StyledLogo } from 'src/components/Logo'
 import Navigation, { StyledNavigation } from 'src/components/Navigation/Navigation'
-import CartButton, { StyledCartButton } from 'src/components/CartButton/CartButton'
-import Burger, { StyledBurger } from 'src/components/Burger/Burger'
+import CartButton, { StyledCartButton } from 'src/components/CartButton'
+import Burger, { StyledBurger } from 'src/components/Burger'
 import { BREAKPOINTS } from 'src/styles/variables'
 import { useLocation } from 'react-router-dom'
 
