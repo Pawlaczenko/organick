@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import { IProduct } from '../../data/products';
-import { flexCenter } from '../../styles/mixins';
+import { IProduct } from 'src/data/products';
+import { flexCenter } from 'src/styles/mixins';
 import StarRating from '../StarRating/StarRating';
 import { NavLink } from 'react-router-dom';
 

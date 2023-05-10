@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import OfferWindow from '../../OfferWindow/OfferWindow';
-import offer_1 from '../../../assets/images/offer-1.jpg';
-import offer_2 from '../../../assets/images/offer-2.jpg';
+import Section from 'src/layout/Section';
+import OfferWindow from 'src/components/OfferWindow/OfferWindow';
+import offer_1 from 'src/assets/images/offer-1.jpg';
+import offer_2 from 'src/assets/images/offer-2.jpg';
 
 const OffersSection : FC = () => {
     return (

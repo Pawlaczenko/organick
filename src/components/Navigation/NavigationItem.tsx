@@ -1,8 +1,7 @@
-import React from 'react'
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { BREAKPOINTS } from '../../styles/variables';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 export interface INavigationItem {
     label: string,

@@ -1,19 +1,25 @@
-import { FC, useState } from 'react'
-import Section from '../../../layout/Section'
+import { FC, useEffect, useState } from 'react'
+import Section from 'src/layout/Section'
 import styled from 'styled-components'
-import Logo, { StyledLogo } from '../../Logo/Logo'
-import Navigation, { StyledNavigation } from '../../Navigation/Navigation'
-import CartButton, { StyledCartButton } from '../../CartButton/CartButton'
-import Burger, { StyledBurger } from '../../Burger/Burger'
-import { BREAKPOINTS } from '../../../styles/variables'
+import Logo, { StyledLogo } from 'src/components/Logo/Logo'
+import Navigation, { StyledNavigation } from 'src/components/Navigation/Navigation'
+import CartButton, { StyledCartButton } from 'src/components/CartButton/CartButton'
+import Burger, { StyledBurger } from 'src/components/Burger/Burger'
+import { BREAKPOINTS } from 'src/styles/variables'
+import { useLocation } from 'react-router-dom'
 
 const Header : FC = () => {
-  
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const location = useLocation();
 
   const handleBurgerToogle = () => {
     setIsOpen(currState => !currState);
   }
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+  
   
   return (
     <HeaderWrapper as="header">

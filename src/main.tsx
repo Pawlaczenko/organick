@@ -5,6 +5,7 @@ import Root from './routes/root.tsx'
 import ErrorPage from './routes/ErrorPage.tsx'
 import HomePage from './routes/HomePage.tsx'
 import GlobalStyles from './styles/globalStyles.tsx'
+import AboutPage from './routes/AboutPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         element: <HomePage />,
         index: true
+      },
+      {
+        element: <AboutPage />,
+        path: '/about'
       }
     ]
   }

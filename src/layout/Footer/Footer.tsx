@@ -1,14 +1,14 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import Logo from '../../Logo/Logo';
-import Paragraph, { StyledParagraph } from '../../Paragraph/Paragraph';
-import { flexCenter } from '../../../styles/mixins';
-import { SOCIALS, SOCIAL_ICONS, COMPANY_INFO } from '../../../data/socials';
-import CircleLink from '../../CircleLink/CircleLink';
-import Heading, { HeadingLevel } from '../../Heading/Heading';
+import Section from 'src/layout/Section';
+import Logo from 'src/components/Logo/Logo';
+import Paragraph, { StyledParagraph } from 'src/components/Paragraph/Paragraph';
+import { flexCenter } from 'src/styles/mixins';
+import { SOCIALS, SOCIAL_ICONS, COMPANY_INFO } from 'src/data/socials';
+import CircleLink from 'src/components/CircleLink/CircleLink';
+import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
 import FooterGroup, { IFooterGroupItem } from './FooterGroup';
-import { BREAKPOINTS } from '../../../styles/variables';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 const Footer : FC = () => {
     const footerSocials = [

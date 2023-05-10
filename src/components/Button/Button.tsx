@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { flexCenter } from '../../styles/mixins';
+import { flexCenter } from 'src/styles/mixins';
 
 export type ButtonType = 'default' | 'yellow' | 'white';
 

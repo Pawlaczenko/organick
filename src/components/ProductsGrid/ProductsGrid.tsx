@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import { IProduct } from '../../data/products'
+import { IProduct } from 'src/data/products'
 import ProductItem from './ProductItem'
 
 interface IProductsGridProps {

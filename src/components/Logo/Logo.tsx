@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import LogoImage from '../../assets/images/logo.svg';
-import { BREAKPOINTS } from '../../styles/variables';
+import LogoImage from 'src/assets/images/logo.svg';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 const Logo : FC = () => {
   return (

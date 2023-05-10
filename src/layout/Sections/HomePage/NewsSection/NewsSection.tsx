@@ -1,11 +1,10 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import Heading, { HeadingLevel, StyledHeading } from '../../Heading/Heading';
-import LinkButton, { StyledLinkButton } from '../../LinkButton/LinkButton';
-import Button from '../../Button/Button';
-import NewsGrid, { StyledNewsGrid } from '../../NewsGrid/NewsGrid';
-import { BREAKPOINTS } from '../../../styles/variables';
+import Section from 'src/layout/Section';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import NewsGrid, { StyledNewsGrid } from 'src/components/NewsGrid/NewsGrid';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 const NewsSection : FC = () => {
     return (

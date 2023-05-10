@@ -1,14 +1,14 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import aboutImage from '../../../assets/images/about-fruits.png';
-import Heading, { HeadingLevel } from '../../Heading/Heading';
-import Paragraph from '../../Paragraph/Paragraph';
-import ImageList, { StyledImageList } from '../../ImageList/ImageList';
-import { IImageListItem } from '../../ImageList/ImageListItem';
+import Section from 'src/layout/Section';
+import aboutImage from 'src/assets/images/about-fruits.png';
+import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
+import Paragraph from 'src/components/Paragraph/Paragraph';
+import ImageList, { StyledImageList } from 'src/components/ImageList/ImageList';
+import { IImageListItem } from 'src/components/ImageList/ImageListItem';
 import {FaLeaf,FaMedal} from "react-icons/fa";
-import LinkButton, { StyledLinkButton } from '../../LinkButton/LinkButton';
-import { BREAKPOINTS } from '../../../styles/variables';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 const AboutSection : FC = () => {
 
@@ -46,7 +46,7 @@ const AboutSectionWrapper = styled(Section)`
 `;
 
 
-const StyledAboutSection = styled.div`
+export const StyledAboutSection = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -55,12 +55,12 @@ const StyledAboutSection = styled.div`
     }
 `;
 
-const StyledAboutImage = styled.figure`
+export const StyledAboutImage = styled.figure`
     background: url(${aboutImage}) center/contain no-repeat;
     min-height: 40rem;
 `;
 
-const AboutInfo = styled.div`
+export const AboutInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;

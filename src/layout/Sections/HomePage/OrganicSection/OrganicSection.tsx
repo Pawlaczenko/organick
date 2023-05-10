@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import { BREAKPOINTS } from '../../../styles/variables';
-import Heading, { HeadingLevel, StyledHeading } from '../../Heading/Heading';
-import LinkButton, { StyledLinkButton } from '../../LinkButton/LinkButton';
-import ProductsGrid, { StyledProductsGrid } from '../../ProductsGrid/ProductsGrid';
-import { getProducts } from '../../../data/products';
+import Section from 'src/layout/Section';
+import { BREAKPOINTS } from 'src/styles/variables';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import ProductsGrid, { StyledProductsGrid } from 'src/components/ProductsGrid/ProductsGrid';
+import { getProducts } from 'src/data/products';
 
 const OrganicSection : FC = () => {
     const products = getProducts(4,'Vegetable');

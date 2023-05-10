@@ -1,6 +1,6 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
-import { IArticle, NEWS_ARTICLES } from '../../data/articles';
+import { IArticle, NEWS_ARTICLES } from 'src/data/articles';
 import NewsItem from './NewsItem';
 
 const NewsGrid : FC = () => {

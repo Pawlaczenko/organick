@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import { getMoth } from '../../helpers/helpers';
+import { getMoth } from 'src/helpers/helpers';
 
 const DateCircle : FC<{date:Date}> = ({date}) => {
     return (

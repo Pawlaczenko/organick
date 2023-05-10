@@ -1,14 +1,12 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
-import { IArticle } from '../../data/articles';
-import { flexCenter } from '../../styles/mixins';
-import { getMoth } from '../../helpers/helpers';
+import { IArticle } from 'src/data/articles';
 import DateCircle from './DateCircle';
 import { FaUserAlt } from 'react-icons/fa';
 import Heading, { HeadingLevel } from '../Heading/Heading';
 import Paragraph from '../Paragraph/Paragraph';
 import LinkButton, { StyledLinkButton } from '../LinkButton/LinkButton';
-import { BREAKPOINTS } from '../../styles/variables';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 const NewsItem : FC<IArticle> = (props) => {
     return (

@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Sections/Header/Header";
-import Newsletter from "../components/Sections/Newsletter/Newsletter";
-import Footer from "../components/Sections/Footer/Footer";
+import Header from "src/layout/Header/Header";
+import Newsletter from "src/layout/Newsletter/Newsletter";
+import Footer from "src/layout/Footer/Footer";
 
 export default function Root() {
     return(

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { BREAKPOINTS } from "../../styles/variables";
+import { BREAKPOINTS } from "src/styles/variables";
 
 interface IProps {
     isOpen: boolean,

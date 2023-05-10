@@ -1,6 +1,6 @@
-import React, { FC, useEffect, useRef } from 'react'
+import { FC, useEffect, useRef } from 'react'
 import styled from 'styled-components'
-import { flexCenter } from '../../styles/mixins';
+import { flexCenter } from 'src/styles/mixins';
 import { animate, motion, useInView } from 'framer-motion';
 
 export interface IStatCircle {

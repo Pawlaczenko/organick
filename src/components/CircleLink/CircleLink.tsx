@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import { createCircle, flexCenter } from '../../styles/mixins';
+import { createCircle, flexCenter } from 'src/styles/mixins';
 
 interface ICircleLink {
     icon: React.ReactElement,

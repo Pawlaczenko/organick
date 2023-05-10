@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import { FaShoppingCart } from "react-icons/fa";
-import { flexCenter, flexStart } from '../../styles/mixins';
+import { flexCenter, flexStart } from 'src/styles/mixins';
 
 const CartButton : FC = () => {
   return (

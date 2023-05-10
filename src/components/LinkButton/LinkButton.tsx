@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Button, { ButtonType } from '../Button/Button';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
-import { flexCenter } from '../../styles/mixins';
+import { flexCenter } from 'src/styles/mixins';
 import { NavLink } from 'react-router-dom';
 
 interface ILinkButtonProps {

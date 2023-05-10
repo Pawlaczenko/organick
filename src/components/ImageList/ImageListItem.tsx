@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
 import Heading, { HeadingLevel } from '../Heading/Heading';
 import Paragraph from '../Paragraph/Paragraph';
-import { flexCenter, flexSpaceBetween, flexStart } from '../../styles/mixins';
+import { flexCenter} from 'src/styles/mixins';
 
 export interface IImageListItem {
     title: string,
-    text: string,
+    text?: string,
     image: string
 }
 
@@ -18,7 +18,7 @@ const ImageListItem : FC<IImageListItem> = (props) => {
             </ItemImage>
             <ItemInfo>
                 <Heading level={HeadingLevel.h6}>{props.title}</Heading>
-                <Paragraph>{props.text}</Paragraph>
+                {props.text && <Paragraph>{props.text}</Paragraph>}
             </ItemInfo>
         </StyledImageListItem>
     )

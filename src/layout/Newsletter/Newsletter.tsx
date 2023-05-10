@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import NewsletterBackground from '../../../assets/images/newsletter-background.png';
-import Heading, { HeadingLevel, StyledHeading } from '../../Heading/Heading';
-import Button from '../../Button/Button';
-import Input from '../../Input/Input';
-import { BREAKPOINTS } from '../../../styles/variables';
-import { addColorOverlay, flexCenter } from '../../../styles/mixins';
+import Section from 'src/layout/Section';
+import NewsletterBackground from 'src/assets/images/newsletter-background.png';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
+import Button from 'src/components/Button/Button';
+import Input from 'src/components/Input/Input';
+import { BREAKPOINTS } from 'src/styles/variables';
+import { addColorOverlay, flexCenter } from 'src/styles/mixins';
 
 const Newsletter : FC = () => {
     return (

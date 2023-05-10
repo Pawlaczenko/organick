@@ -1,11 +1,11 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import Heading, { HeadingLevel, StyledHeading } from '../../Heading/Heading';
-import { ECOFRIENDLY_CONTENT, IEcofriendlyContent } from '../../../data/ecofriendly';
-import Paragraph from '../../Paragraph/Paragraph';
-import EcoBackground from '../../../assets/images/eco-background.jpg';
-import { BREAKPOINTS } from '../../../styles/variables';
+import Heading, { HeadingLevel, StyledHeading } from 'src/components/Heading/Heading';
+import Paragraph from 'src/components/Paragraph/Paragraph';
+import EcoBackground from 'src/assets/images/eco-background.jpg';
+import Section from 'src/layout/Section';
+import { BREAKPOINTS } from 'src/styles/variables';
+import { ECOFRIENDLY_CONTENT, IEcofriendlyContent } from 'src/data/ecofriendly';
 
 const EcoFriendlySection : FC = () => {
     const listItems : IEcofriendlyContent[] = [...ECOFRIENDLY_CONTENT];

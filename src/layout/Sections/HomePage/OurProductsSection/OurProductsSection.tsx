@@ -1,11 +1,10 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import Section from '../../../layout/Section';
-import Heading, { HeadingLevel } from '../../Heading/Heading';
-import ProductsGrid, { StyledProductsGrid } from '../../ProductsGrid/ProductsGrid';
-import { BREAKPOINTS } from '../../../styles/variables';
-import LinkButton, { StyledLinkButton } from '../../LinkButton/LinkButton';
-import { getProducts } from '../../../data/products';
+import Section from 'src/layout/Section';
+import Heading, { HeadingLevel } from 'src/components/Heading/Heading';
+import ProductsGrid, { StyledProductsGrid } from 'src/components/ProductsGrid/ProductsGrid';
+import LinkButton, { StyledLinkButton } from 'src/components/LinkButton/LinkButton';
+import { getProducts } from 'src/data/products';
 
 const OurProductsSection : FC = () => {
     const products = getProducts(8);
