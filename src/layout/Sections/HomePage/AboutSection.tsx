@@ -28,7 +28,7 @@ const AboutSection : FC = () => {
     return (
         <AboutSectionWrapper>
             <StyledAboutSection>
-                <StyledAboutImage />
+                <StyledAboutImage url={aboutImage} />
                 <AboutInfo>
                     <Heading level={HeadingLevel.h2} upperText='About Us' >We Believe in Working Accredited Farmers</Heading>
                     <Paragraph>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</Paragraph>
@@ -50,13 +50,14 @@ export const StyledAboutSection = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media only screen and (${BREAKPOINTS.burger}){
+    @media only screen and (${BREAKPOINTS.big}){
         grid-template-columns: 1fr;
+        gap: 4rem;
     }
 `;
 
-export const StyledAboutImage = styled.figure`
-    background: url(${aboutImage}) center/contain no-repeat;
+export const StyledAboutImage = styled.figure<{url: string}>`
+    background: url(${(props)=>props.url}) center/contain no-repeat;
     min-height: 40rem;
 `;
 
@@ -67,8 +68,10 @@ export const AboutInfo = styled.div`
     justify-content: start;
 
     & > ${StyledImageList} {
-        width: 80%;
         margin: 4.5rem 0;
+        & p {
+            width: 80%;
+        }
     }
 
     @media only screen and (${BREAKPOINTS.burger}){

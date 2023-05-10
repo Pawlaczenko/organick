@@ -45,7 +45,7 @@ const ItemImage = styled.figure`
     height: var(--image-size);
     ${flexCenter};
 
-    background: radial-gradient(circle, var(--color-accent) 0%, var(--color-accent) 15%, rgba(255,255,255,1) 15%);
+    background: radial-gradient(circle, var(--color-accent) 0%, rgba(255,244,205,1) 30%, rgba(255,255,255,1) 30%);
     border-radius: 2rem;
 
     & > svg {

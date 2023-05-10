@@ -19,6 +19,7 @@ export const StyledParagraph = styled.p<IParagraphProps>`
     color: var(--color-grey);
     text-align: ${(props) => props.textAlign || "left"};
     margin: 1rem 0;
+    line-height: 1.65;
 `;
 
 
