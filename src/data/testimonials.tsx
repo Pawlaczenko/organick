@@ -1,4 +1,4 @@
-import { IStatCircle } from "../components/StatCircle/StatCircle";
+import { IStatCircle } from "../components/StatCircle";
 
 export interface ITestimonials {
     photo: string,

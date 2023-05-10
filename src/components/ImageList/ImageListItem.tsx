@@ -1,12 +1,12 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from 'styled-components'
-import Heading, { HeadingLevel } from '../Heading/Heading';
-import Paragraph from '../Paragraph/Paragraph';
-import { flexCenter, flexSpaceBetween, flexStart } from '../../styles/mixins';
+import Heading, { HeadingLevel } from '../Heading';
+import Paragraph from '../Paragraph';
+import { flexCenter} from 'src/styles/mixins';
 
 export interface IImageListItem {
     title: string,
-    text: string,
+    text?: string,
     image: string
 }
 
@@ -18,7 +18,7 @@ const ImageListItem : FC<IImageListItem> = (props) => {
             </ItemImage>
             <ItemInfo>
                 <Heading level={HeadingLevel.h6}>{props.title}</Heading>
-                <Paragraph>{props.text}</Paragraph>
+                {props.text && <Paragraph>{props.text}</Paragraph>}
             </ItemInfo>
         </StyledImageListItem>
     )
@@ -45,7 +45,7 @@ const ItemImage = styled.figure`
     height: var(--image-size);
     ${flexCenter};
 
-    background: radial-gradient(circle, var(--color-accent) 0%, var(--color-accent) 15%, rgba(255,255,255,1) 15%);
+    background: radial-gradient(circle, var(--color-accent) 0%, rgba(255,244,205,1) 30%, rgba(255,255,255,1) 30%);
     border-radius: 2rem;
 
     & > svg {

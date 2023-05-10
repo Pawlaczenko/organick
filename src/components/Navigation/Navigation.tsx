@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import NavigationItem, { INavigationItem } from './NavigationItem';
-import { BREAKPOINTS } from '../../styles/variables';
+import { BREAKPOINTS } from 'src/styles/variables';
 
 const NAVIGATION_ITEMS : INavigationItem[] = [
     {label: "Home", to:"/"},

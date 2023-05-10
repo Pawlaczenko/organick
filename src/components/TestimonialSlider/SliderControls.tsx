@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
-import { flexCenter } from '../../styles/mixins'
-import { BREAKPOINTS } from '../../styles/variables';
+import { flexCenter } from 'src/styles/mixins'
+import { BREAKPOINTS } from 'src/styles/variables';
 
 interface ISLiderControlsProps {
     currentSlide: number;

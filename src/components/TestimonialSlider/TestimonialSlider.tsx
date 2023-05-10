@@ -1,11 +1,11 @@
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 import styled from 'styled-components'
-import { TESTIMONIALS } from '../../data/testimonials';
-import StarRating from '../StarRating/StarRating';
-import Paragraph, { StyledParagraph } from '../Paragraph/Paragraph';
-import Heading, { HeadingLevel } from '../Heading/Heading';
+import { TESTIMONIALS } from 'src/data/testimonials';
+import StarRating from '../StarRating';
+import Paragraph, { StyledParagraph } from '../Paragraph';
+import Heading, { HeadingLevel } from '../Heading';
 import SliderControls from './SliderControls';
-import { BREAKPOINTS } from '../../styles/variables';
+import { BREAKPOINTS } from 'src/styles/variables';
 import { motion, useAnimate } from 'framer-motion';
 
 const TestimonialSlider : FC = () => {
